@@ -3,6 +3,7 @@ class FancyCard extends HTMLElement {
 
       this.classList.add(
         'bg-cyan-100',
+        'my-4',
         'flex',
         'gap-2',
         'rounded-md',
@@ -13,7 +14,7 @@ class FancyCard extends HTMLElement {
       ); 
       const tipe = this.getAttribute('tipe');
       const content = this.innerHTML;
-      
+
       this.innerHTML = `
     <blockquote class="flex gap-2 p-3 ${tipe} w-full h-auto rounded-md">
       <img class="w-5" src="/public/info.svg">
