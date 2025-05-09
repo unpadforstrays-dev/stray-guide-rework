@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'SuisseIntl-Regular';
+    font-display: swap;
+    src: url(/public/font/SuisseIntl-Regular.woff2) format('woff2');
+  }
+  html {
+    font-family: 'SuisseIntl-Regular', system-ui, sans-serif;
+  }
+
+  }
+/* Custom class here */
+@layer components {
+  .warn {
+    @apply bg-red-100
+  }
+  .info {
+    @apply bg-cyan-100
+  }
+  .tips {
+    @apply bg-green-100
+  }
+}
+
+@layer base {
+    h2 {
+      @apply text-2xl font-bold mb-4
+    }
+    h3 {
+      @apply font-bold mb-1
+    }
+    p {
+      @apply  mb-8 sm:text-justify leading-7
+    }
+    a {
+      @apply underline
+    }
+    ul {
+      @apply list-disc ml-5 sm:ml-8  text-lg my-3
+    }
+    ol {
+      @apply list-decimal ml-5 sm:ml-8  text-lg my-3
+    }
+    img {
+      @apply rounded-lg md:max-w-4xl my-5
+    }
+    em {
+      @apply italic
+    }
+
+}
