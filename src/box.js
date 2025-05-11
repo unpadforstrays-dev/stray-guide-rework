@@ -1,8 +1,7 @@
 class FancyCard extends HTMLElement {
     connectedCallback() {
-
+      // sejujurny gatau ini untuk apa karena ketika Tailwind class yg sama dimasukin ke sini, malah jd conflicting
       this.classList.add(
-        'bg-cyan-100',
         'my-4',
         'flex',
         'gap-2',
@@ -11,15 +10,31 @@ class FancyCard extends HTMLElement {
         'w-5',
         'text-sm',
         'w-full'
-      ); 
-      const tipe = this.getAttribute('tipe');
+      );
+      // Initialization
       const content = this.innerHTML;
-
+      let icon = "";
+      let tipe = this.getAttribute('tipe');
+      // Teh Fiona pls review?
+      switch (tipe) {
+        case 'warn':
+          icon = "/public/warn.svg";
+          break;
+        case 'tips':
+          icon = "/public/tips.svg";
+          break;
+        default:
+          icon = "/public/info.svg";
+      }
+      
       this.innerHTML = `
-    <blockquote class="flex gap-2 p-3 ${tipe} w-full h-auto rounded-md">
-      <img class="w-5" src="/public/info.svg">
+    <div class="mx-auto">
+      <blockquote class="flex gap-2 p-3 ${tipe} w-80 h-auto rounded-md">
+      <img class="w-5" src=${icon}>
       <div>${content}</div>
-    </blockquote>
+      </blockquote>
+    </div>
+
       `;
     }
   }
