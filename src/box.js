@@ -12,6 +12,7 @@ class FancyCard extends HTMLElement {
         'w-full'
       );
       // Initialization
+      const content = this.innerHTML;
       let icon = "";
       let tipe = this.getAttribute('tipe');
       // Teh Fiona pls review?
@@ -19,13 +20,13 @@ class FancyCard extends HTMLElement {
         case 'warn':
           icon = "/public/warn.svg";
           break;
-        case 'info':
-          icon = "/public/info.svg";
+        case 'tips':
+          icon = "/public/tips.svg";
           break;
         default:
-          icon = "/public/tips.svg";
+          icon = "/public/info.svg";
       }
-      const content = this.innerHTML;
+      
       this.innerHTML = `
     <div class="mx-auto">
       <blockquote class="flex gap-2 p-3 ${tipe} w-80 h-auto rounded-md">
