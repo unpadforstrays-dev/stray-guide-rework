@@ -40,10 +40,10 @@
       @apply underline
     }
     ul {
-      @apply list-disc ml-5 sm:ml-8  text-lg my-3
+      @apply list-disc ml-5 sm:ml-8  my-3
     }
     ol {
-      @apply list-decimal ml-5 sm:ml-8  text-lg my-3
+      @apply list-decimal ml-5 sm:ml-8  my-3
     }
     img {
       @apply rounded-lg md:max-w-4xl my-5
