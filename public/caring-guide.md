@@ -140,6 +140,7 @@ Sejak 2021, UnpadSF telah melakukan TNR kepada kucing stray di wilayah selatan (
 Jika pembaca melihat kucing dengan ear-tip, artinya ia sudah menjalani program pengendalian populasi kucing yang humanis. Itu berarti ada seseorang, atau, sekelompok orang yang peduli dengannya. Berikut adalah bentuk-bentuk eartip di kampus:
 
 <div id="eartip"></div>
+
 ![tanda eartip pada kucing di wilayah kampus](https://s6.imgcdn.dev/YwtrEM.webp)
 
 Kucing kampus yang telah disteril tidak tersedia untuk diadopsi. Mereka hadir sebagai bagian dari edukasi manfaat dan pentingnya TNR untuk warga Universitas Padjadjaran.
