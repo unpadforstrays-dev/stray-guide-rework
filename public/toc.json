@@ -4,7 +4,7 @@
         "id": "pembuka"
     },
     {
-        "title": "Memberi Makan Dengan Benar dan Sadar",
+        "title": "Memberi Makan Dengan Benar dan Sadar Konsekuensi",
         "id": "feeding"
     },
     {
@@ -36,11 +36,12 @@
         "id": "obat"
     },
     {
-        "title": "Community Pets",
+        "title": "Community Pets, Peliharaan Bersama",
         "id": "community-pets"
     },
     {
         "title": "RSH, Klinik, Pet Store & Hotel Terdekat",
         "id": "nearby"
     }
+
 ]
