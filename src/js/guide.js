@@ -1,42 +1,49 @@
-document.getElementById('nav-toggle').addEventListener("click", function(){
-    document.getElementById('nav-menu').classList.toggle("hidden");
-});
+const tombol = document.getElementById('nav-toggle');
+const popup = document.getElementById('nav-menu');
 
-document.getElementById('closebutton').addEventListener("click", function () { document.getElementById('nav-menu').classList.add("hidden")} );
+// Check if elements exist before adding listener
+if (tombol && popup) {
+    tombol.addEventListener("click", function() {
+        popup.classList.toggle('hidden');
+    });
+}
 
+// async utk load artikel md
 async function loadBlogs() {
     const urls = [
-      "https://raw.githubusercontent.com/ligardi/tes-md/main/blog.md",
-      "https://raw.githubusercontent.com/ligardi/tes-md/main/blog2.md",
-      "https://raw.githubusercontent.com/ligardi/tes-md/main/blog3.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/01-feeding-guide.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/02-merk-pakan.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/03-tnr.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/04-eartip.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/05-menghindari-penyakit.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/06-abuse.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/07-menggendong.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/08-obat.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/09-community-pets.md",
+        "https://raw.githubusercontent.com/unpadforstrays-dev/stray-guide-rework/refs/heads/main/public/md-articles/10-nearby-rsh-klinik.md"
     ];
-  
-    // array mapping artikel yg di fetch
-    const blogPromises = urls.map((url, index) =>
-      fetch(url)
-        .then((response) => {
-          if (!response.ok)
-            throw new Error(`HTTP error! status: ${response.status}`);
-          return response.text();
-        })
-        .then((markdown) => {
-          //div buat setiap blog1, blog2, blog3
-          const ShareBtn = document.createElement('share-button');
-          const blogs = document.getElementById(`blog${index + 1}`);
-          blogs.innerHTML = marked.parse(markdown);
-          // testing apakah bisa pake javascript createElement utk nambahin share button
-          // workinggg
-          blogs.appendChild(ShareBtn);
-        })
-        .catch((error) => {
-          console.error(`Error loading blog ${index + 1}:`, error);
-        })
-    );
-  
-    // tunggu semua fetch
-    await Promise.all(blogPromises);
-  }
-  
-  // untuk jalanin fungsi loadBlogs 
-  document.addEventListener("DOMContentLoaded", loadBlogs);
 
+    const blogPromises = urls.map((url, index) =>
+        fetch(url)
+            .then((response) => {
+                if (!response.ok) 
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                return response.text();
+            })
+            .then((markdown) => {
+                const ShareBtn = document.createElement('share-button');
+                const blogs = document.getElementById(`blog${index + 1}`);
+                if (blogs) {
+                    blogs.innerHTML = marked.parse(markdown);
+                    blogs.appendChild(ShareBtn);
+                }
+            })
+            .catch((error) => {
+                console.error(`Error loading blog ${index + 1}:`, error);
+            })
+    );
+
+    await Promise.all(blogPromises);
+}
+
+document.addEventListener("DOMContentLoaded", loadBlogs);
