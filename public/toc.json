@@ -12,11 +12,11 @@
         "id": "daftar-merk"
     },
     {
-        "title": "Tentang Steril (TNR)",
+        "title": "Pentingnya Steril (TNR)",
         "id": "tnr"
     },
     {
-        "title": "Tentang Ear Tip",
+        "title": "Ear Tip Pada Kucing",
         "id": "eartip"
     },
     {
@@ -28,7 +28,7 @@
         "id": "abuse"
     },
     {
-        "title": "Menggendong dengan Benar",
+        "title": "Menggendong Kucing dengan Benar",
         "id": "cakar"
     },
     {
@@ -36,7 +36,7 @@
         "id": "obat"
     },
     {
-        "title": "Community Pets, Peliharaan Bersama",
+        "title": "Community Pets, Peliharaan Kita Bersama",
         "id": "community-pets"
     },
     {
@@ -45,3 +45,4 @@
     }
 
 ]
+
