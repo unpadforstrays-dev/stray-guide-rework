@@ -1,7 +1,6 @@
 const tombol = document.getElementById('nav-toggle');
 const popup = document.getElementById('nav-menu');
 
-// Check if elements exist before adding listener
 if (tombol && popup) {
     tombol.addEventListener("click", function() {
         popup.classList.toggle('hidden');
