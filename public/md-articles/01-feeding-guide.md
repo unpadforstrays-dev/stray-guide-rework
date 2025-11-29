@@ -10,7 +10,7 @@ Unpad Street Animal Friend (USAF) meyakini bahwa memberi makan hewan jalanan (_s
 
 Melalui kegiatan *feeding*, akan sangat baik apabila, kepeduliannya tidak hanya berhenti di situ, tetapi berkembang menjadi aksi kepedulian yang lebih besar, seperti melakukan vaksinasi, TNR, atau adopsi untuk kucing jalanan di lingkungan sekitar pembaca. Tetapi perlu dicatat, kegiatan *feeding* juga harus dilakukan dengan kesadaran dan tanggung jawab penuh. Bagian ini hadir sebagai referensi praktik yang direkomendasikan (*best practice*) bagi pembaca yang ingin melakukan kegiatan _feeding_ kucing maupun anjing di wilayah kampus Unpad.
 
-# ♡ Memberi Makan Dengan Baik & Bertanggung jawab ♡
+## ♡ Memberi Makan Dengan Baik & Bertanggung jawab ♡
 
 ### Menggunakan Wadah
 
