@@ -559,7 +559,7 @@ video {
 
   font-display: swap;
 
-  src: url(/public/font/SuisseIntl-Regular.woff2) format('woff2');
+  src: url(https://rawcdn.githack.com/unpadforstrays-dev/stray-guide-rework/834f8466f7f54f50a9c0fbd137469d77367f939a/public/font/SuisseIntl-Regular.woff2) format('woff2');
 }
 
 html {

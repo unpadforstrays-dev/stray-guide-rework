@@ -20,13 +20,13 @@ class FancyCard extends HTMLElement {
       // Kamu lupa nambahin OR di initialization untuk default case (tips)
       switch (tipe) {
         case 'warn':
-          icon = "/public/warn.svg";
+          icon = "https://github.com/unpadforstrays-dev/stray-guide-rework/raw/refs/heads/main/public/warn.svg";
           break;
         case 'info':
-          icon = "/public/info.svg";
+          icon = "https://github.com/unpadforstrays-dev/stray-guide-rework/raw/refs/heads/main/public/info.svg";
           break;
         default:
-          icon = "/public/tips.svg";
+          icon = "https://github.com/unpadforstrays-dev/stray-guide-rework/raw/refs/heads/main/public/tips.svg";
       }
       
       this.innerHTML = `
