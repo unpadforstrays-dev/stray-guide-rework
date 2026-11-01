@@ -3,9 +3,9 @@
 ## Menghindari Gigitan dan Cakaran Kucing
 Kucing cenderung mencakar sebagai bentuk pertahanan diri dari sesuatu yang tidak ia sukai.
 Hindari memegang atau menggelitik bagian perut bawah kucing stray yang belum mengenal pembaca. Selain itu, menghindari gigitan & cakaran kucing dapat dilakukan dengan memangku dan mengangkat mereka dengan benar. Berikut adalah peragaan yang dapat pembaca jadikan contoh:
- ![volunteer Sheila handling cat the proper way](https://s6.imgcdn.dev/YwRtKD.webp)
+ ![volunteer Sheila handling cat the proper way](https://i.ibb.co.com/k6kmcg1r/carrying-guide.webp)
 
-![Volunteer Mettika Settha Kurniawan handling kitten](https://s6.imgcdn.dev/YwR5Ad.jpg)
+![Volunteer Mettika Settha Kurniawan handling kitten](https://i.ibb.co.com/whfyjrnt/Mettika-handling.jpg)
  Peragaan di atas adalah restrain kitten lebih dari satu ekor dengan tujuan pemberian obat. Kitten sehat cenderung bergerak aktif biasanya sulit untuk diberikan obat.
 
 Seluruh peragaan di atas dilakukan oleh para volunteer. Poster dapat dibagikan ulang sebagai bentuk edukasi publik.
